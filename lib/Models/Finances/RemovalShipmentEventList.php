@@ -167,7 +167,7 @@ class RemovalShipmentEventList implements ModelInterface, ArrayAccess, IterableT
      */
     public function listInvalidProperties()
     {
-        $invalidProperties = parent::listInvalidProperties();
+        $invalidProperties = $this->parent->listInvalidProperties();
 
         return $invalidProperties;
     }

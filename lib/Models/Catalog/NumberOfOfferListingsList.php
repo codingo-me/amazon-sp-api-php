@@ -167,7 +167,7 @@ class NumberOfOfferListingsList extends Categories implements ModelInterface, Ar
      */
     public function listInvalidProperties()
     {
-        $invalidProperties = parent::listInvalidProperties();
+        $invalidProperties = $this->parent->listInvalidProperties();
 
         return $invalidProperties;
     }

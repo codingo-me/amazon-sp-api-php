@@ -167,7 +167,7 @@ class ReturnAuthorizationList implements ModelInterface, ArrayAccess, IterableTy
      */
     public function listInvalidProperties()
     {
-        $invalidProperties = parent::listInvalidProperties();
+        $invalidProperties = $this->parent->listInvalidProperties();
 
         return $invalidProperties;
     }

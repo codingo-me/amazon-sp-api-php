@@ -167,7 +167,7 @@ class UnfulfillablePreviewItemList implements ModelInterface, ArrayAccess, Itera
      */
     public function listInvalidProperties()
     {
-        $invalidProperties = parent::listInvalidProperties();
+        $invalidProperties = $this->parent->listInvalidProperties();
 
         return $invalidProperties;
     }

@@ -167,7 +167,7 @@ class TransparencyCodeList implements ModelInterface, ArrayAccess, IterableType
      */
     public function listInvalidProperties()
     {
-        $invalidProperties = parent::listInvalidProperties();
+        $invalidProperties = $this->parent->listInvalidProperties();
 
         return $invalidProperties;
     }
