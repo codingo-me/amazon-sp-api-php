@@ -66,6 +66,8 @@ class InventorySummaries implements ModelInterface, ArrayAccess
         return self::$swaggerTypes;
     }
 
+    public function getSubClass() { return InventorySummary::class; }
+
     /**
      * Array of property to format mappings. Used for (de)serialization.
      *
