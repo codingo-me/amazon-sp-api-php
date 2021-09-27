@@ -55,7 +55,7 @@ class ApiException extends Exception
      */
     public function __construct($message = '', $code = 0, $responseHeaders = [], $responseBody = null)
     {
-        $this->parent->__construct($message, $code);
+        parent::construct($message, $code);
         $this->responseHeaders = $responseHeaders;
         $this->responseBody = $responseBody;
     }

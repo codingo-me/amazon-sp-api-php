@@ -9,6 +9,6 @@ class SellingPartnerOAuthException extends Exception
 {
     public function __construct($message = '', $code = 0, Throwable $previous = null)
     {
-        $this->parent->__construct($message, $code, $previous);
+        parent::construct($message, $code, $previous);
     }
 }
